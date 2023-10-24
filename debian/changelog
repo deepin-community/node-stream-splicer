@@ -1,5 +1,79 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-stream-splicer (2.0.1-4) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-stream-splicer: Add Multi-Arch: foreign.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Tue, 22 Nov 2022 14:52:01 +0000
+
+node-stream-splicer (2.0.1-3) unstable; urgency=medium
+
+  * Team upload
+  * Fix filenamemangle
+  * Fix test for tap >= 15 (--no-cov)
+
+ -- Yadd <yadd@debian.org>  Thu, 14 Apr 2022 05:56:41 +0200
+
+node-stream-splicer (2.0.1-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+  [ Yadd ]
+  * Bump debhelper compatibility level to 13
+  * Fix GitHub tags regex
+  * Use dh-sequence-nodejs
+  * Update standards version to 4.6.0, no changes needed.
+  * Remove dependency to nodejs
+
+ -- Yadd <yadd@debian.org>  Tue, 12 Oct 2021 09:40:03 +0200
+
+node-stream-splicer (2.0.1-1) unstable; urgency=medium
+
+  * Team upload
+  * Add upstream/metadata
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Update debian/watch to use GitHub tags
+  * New upstream version 2.0.1
+  * Add dependency to node-readable-stream
+  * Add fix for recent through2 & readable-stream (fixes debci)
+  * Use pkg-js-tools auto test & install
+  * Drop unneeded version constraints from (build) dependencies
+  * Update copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 24 Jan 2020 14:40:47 +0100
+
+node-stream-splicer (2.0.0-4) unstable; urgency=medium
+
+  [ Bastien Roucariès ]
+  * Fix debci regression with nodejs (>= 10).
+
+  [ Xavier Guimard ]
+  * Set minimal version for node-through2 to 2.0.5-2. Fix debci.
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 16 Jan 2019 11:13:51 +0100
+
+node-stream-splicer (2.0.0-3) unstable; urgency=medium
+
+  * Add node-tap depends
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 07 Jun 2018 18:37:26 +0200
+
+node-stream-splicer (2.0.0-2) unstable; urgency=medium
+
+  * Move to salsa
+  * Bump policy and compat (no changes)
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 07 Jun 2018 17:14:47 +0200
+
+node-stream-splicer (2.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #873942)
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 30 Aug 2017 17:33:31 +0200
